@@ -25,6 +25,8 @@
             <source url="https://github.com/CocoaPods/Specs.git" />
         </pods-config>
         <pod name="JumioMobileSDK" version="2.12.0" configurations="release,debug" />
+	    		<framework src="./custom.gradle" custom="true" type="gradleReference" />
+
     </platform>
     
     <platform name="android">
@@ -82,6 +84,5 @@
 			-dontwarn com.microblink.**
         </proguard-config>
         <source-file src="src/android/JumioMobileSDK.java" target-dir="src/com/jumio/mobilesdk" />
-		<framework src="./custom.gradle" custom="true" type="gradleReference" />
     </platform>
 </plugin>
